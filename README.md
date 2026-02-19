@@ -7,25 +7,16 @@ The entire infrastructure lifecycle was managed using version-controlled Terrafo
 
 🏗 Architecture Components
 
-Custom VPC (10.0.0.0/16)
-
-Public Subnet with auto-assign public IP
-
-Internet Gateway attached to VPC
-
-Public Route Table (0.0.0.0/0 → IGW)
-
-Security Group (SSH – 22, App Port – 5000)
-
-EC2 Instance deployed inside public subnet
-
-IAM Role attached to EC2 (ECR access)
-
-Remote State stored in S3 backend
-
-S3 Bucket versioning enabled
-
-## 📁 Project Structure
+Custom VPC (10.0.0.0/16)  
+Public Subnet with auto-assign public IP  
+Internet Gateway attached to VPC  
+Public Route Table (0.0.0.0/0 → IGW)  
+Security Group (SSH – 22, App Port – 5000)  
+EC2 Instance deployed inside public subnet  
+IAM Role attached to EC2 (ECR access)  
+Remote State stored in S3 backend  
+S3 Bucket versioning enabled  
+## 📁 Project Structure  
 
 ```
 devops-terraform-infrastructure/
@@ -47,13 +38,10 @@ devops-terraform-infrastructure/
 
 🔐 Remote Backend Configuration
 
-Terraform state is stored remotely using S3 backend:
-
-S3 bucket created manually
-
-Versioning enabled to prevent accidental state loss
-
-State file stored under: terraform-infra/terraform.tfstate
+Terraform state is stored remotely using S3 backend:  
+S3 bucket created manually  
+Versioning enabled to prevent accidental state loss  
+State file stored under: terraform-infra/terraform.tfstate  
 
 Backend initialized using:
 ```
@@ -64,34 +52,38 @@ terraform init -reconfigure
 ```
 terraform init
 ```
-2️⃣ Validate Configuration
+
+2️⃣ Validate Configuration  
 ```
 terraform validate
 ```
-3️⃣ Preview Changes
+
+3️⃣ Preview Changes  
 ```
 terraform plan
 ```
 
-4️⃣ Deploy Infrastructure
+4️⃣ Deploy Infrastructure  
 ```
 terraform apply
 ```
-5️⃣ Verify State
+
+5️⃣ Verify State  
 ```
 terraform state list
 ```
-6️⃣ Destroy Infrastructure
+
+6️⃣ Destroy Infrastructure  
 ```
 terraform destroy
 ```
-✅ Validation Performed
 
-Verified resources via AWS Console
+✅ Validation Performed  
 
-Verified infrastructure using AWS CLI
+Verified resources via AWS Console  
+Verified infrastructure using AWS CLI  
 
-Confirmed no resource drift using:
+Confirmed no resource drift using:  
 ```
 terraform plan
 ```
@@ -100,37 +92,25 @@ Destroyed all infrastructure and confirmed zero billing risk
 
 📊 Key Achievements
 
-Fully automated AWS infrastructure provisioning
+Fully automated AWS infrastructure provisioning  
+Version-controlled infrastructure code  
+Remote state management with versioning protection  
+Clean separation of infrastructure layers (networking, security, compute, IAM)   
+Complete lifecycle testing (init → apply → destroy)  
+Clean resource audit using AWS CLI after destroy  
 
-Version-controlled infrastructure code
+🧠 Lessons Learned  
 
-Remote state management with versioning protection
+Importance of remote backend for collaboration  
+Infrastructure drift detection using Terraform plan  
+Proper cleanup to avoid unnecessary AWS billing  
+IAM role attachment best practices  
+Public subnet routing and Internet Gateway setup  
+Terraform file structure organization (production-style layout)  
 
-Clean separation of infrastructure layers (networking, security, compute, IAM)
-
-Complete lifecycle testing (init → apply → destroy)
-
-Clean resource audit using AWS CLI after destroy
-
-🧠 Lessons Learned
-
-Importance of remote backend for collaboration
-
-Infrastructure drift detection using Terraform plan
-
-Proper cleanup to avoid unnecessary AWS billing
-
-IAM role attachment best practices
-
-Public subnet routing and Internet Gateway setup
-
-Terraform file structure organization (production-style layout)
-
-🎯 Outcome
-
-Successfully provisioned and destroyed a complete AWS environment using Terraform with zero manual console configuration.
-
-Demonstrated production-level Infrastructure as Code practices suitable for DevOps Engineer, Cloud Engineer, and Infrastructure Engineer roles.
+🎯 Outcome  
+Successfully provisioned and destroyed a complete AWS environment using Terraform with zero manual console configuration.  
+Demonstrated production-level Infrastructure as Code practices suitable for DevOps Engineer, Cloud Engineer, and Infrastructure Engineer roles.  
 
 ##👨‍💻 Author  
 
