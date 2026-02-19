@@ -56,28 +56,35 @@ Versioning enabled to prevent accidental state loss
 State file stored under: terraform-infra/terraform.tfstate
 
 Backend initialized using:
-
+---
 terraform init -reconfigure
-
+---
 ⚙️ Deployment Workflow
 1️⃣ Initialize
+---
 terraform init
-
+---
 2️⃣ Validate Configuration
+---
 terraform validate
-
+---
 3️⃣ Preview Changes
+---
 terraform plan
+---
 
 4️⃣ Deploy Infrastructure
+---
 terraform apply
-
+---
 5️⃣ Verify State
+---
 terraform state list
-
+---
 6️⃣ Destroy Infrastructure
+---
 terraform destroy
-
+---
 ✅ Validation Performed
 
 Verified resources via AWS Console
@@ -85,9 +92,9 @@ Verified resources via AWS Console
 Verified infrastructure using AWS CLI
 
 Confirmed no resource drift using:
-
+---
 terraform plan
-
+---
 
 Destroyed all infrastructure and confirmed zero billing risk
 
