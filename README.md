@@ -132,9 +132,9 @@ Successfully provisioned and destroyed a complete AWS environment using Terrafor
 
 Demonstrated production-level Infrastructure as Code practices suitable for DevOps Engineer, Cloud Engineer, and Infrastructure Engineer roles.
 
-👨‍💻 Author
+##👨‍💻 Author  
 
-Chetan Kumar
-DevOps Engineer | Cloud
-Bengaluru, India
-GitHub: https://github.com/CHETANKUMAR20
+Chetan Kumar  
+DevOps Engineer | Cloud  
+Bengaluru, India  
+GitHub: https://github.com/CHETANKUMAR20  
