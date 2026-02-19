@@ -1,12 +1,9 @@
-# Terraform files
+# Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
 crash.log
 
-# Sensitive files
+# Sensitive
 *.pem
 *.key
-
-# Terraform lock file (optional, but usually keep it)
-# .terraform.lock.hcl
