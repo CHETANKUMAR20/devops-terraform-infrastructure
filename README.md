@@ -25,7 +25,9 @@ Remote State stored in S3 backend
 
 S3 Bucket versioning enabled
 
-📁 Project Structure
+## 📁 Project Structure
+
+```
 devops-terraform-infrastructure/
 │
 ├── backend.tf
@@ -40,6 +42,8 @@ devops-terraform-infrastructure/
 ├── terraform.tfvars
 ├── output.tf
 └── README.md
+```
+
 
 🔐 Remote Backend Configuration
 
