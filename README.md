@@ -112,9 +112,7 @@ Terraform file structure organization (production-style layout)
 Successfully provisioned and destroyed a complete AWS environment using Terraform with zero manual console configuration.  
 Demonstrated production-level Infrastructure as Code practices suitable for DevOps Engineer, Cloud Engineer, and Infrastructure Engineer roles.  
 
-##👨‍💻 Author  
+## 👤 Author
 
-Chetan Kumar  
-DevOps Engineer | Cloud  
-Bengaluru, India  
-GitHub: https://github.com/CHETANKUMAR20  
+**Chetan Kumar**  
+Cloud & DevOps Engineer  
